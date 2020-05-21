@@ -1,10 +1,19 @@
 /* ----------------------------------------colour reference */
 /* 
+black
 blue grey: #202040
 navy blue: #202060
 purple: #602080
 pink: #b030b0
 grey: #808080
+
+focus colors:
+black: #262630
+blue grey: #3c3c68
+navy blue: #46469b
+purple: #783f99
+pink: #aa50ad
+grey: #686768
 
 */
 
@@ -104,6 +113,10 @@ ul.spaced-list li{
     cursor: pointer;
     padding: 20px 40px;
 }
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background: #3c3c68;
+    border: 1px solid #3c3c68;
+}
 .btn-secondary{
     background: black;
     border: 1px solid white;
@@ -122,7 +135,43 @@ ul.spaced-list li{
     color: white;
 }
 
+
+/* more icons */
+.more-icon{
+    width: 80px;
+    height: 80px;
+    padding-top: 20px;
+    position: absolute;
+    margin: 25px;
+    transition: 0.5s;
+}
+.more-icon:hover { 
+    cursor: pointer;
+    font-size: 1.1em;;
+}
+.more-icon a{
+    color: white;
+}
+.to-brand{
+    top: 30vh;
+    border-radius: 40px;
+    border: 1px solid white;
+    background: #202040;
+}
+.to-brand:hover{
+    background: #3c3c68;
+}
+.to-production{
+    opacity: 0.6;
+}
+.to-get-in-touch{
+    bottom: 3vh;
+    opacity: 0.6;
+}
+
+
 /* ----------------------------------------nav */
+header{}
 .menu-mobile{
     position: fixed;
     background: rgba(0,0,0,0.8);
@@ -192,7 +241,7 @@ section#landing{
 }
 #hex1{
     position: absolute;
-    animation: rotation 80s infinite linear reverse;
+    animation: rotation 50s infinite linear reverse;
     height: 60vh;
     top: 15vh;
     left: 0vw;
@@ -202,14 +251,14 @@ section#landing{
     height: 80vh;
     top: 5vh;
     left: -15vw;
-    animation: rotation 140s infinite linear;
+    animation: rotation 100s infinite linear;
 }
 #hex3{
     position: absolute;
     height: 200vh;
     top: -50vh;
     left: -100vw;
-    animation: rotation 180s infinite linear reverse;
+    animation: rotation 150s infinite linear reverse;
 }
 .logo{
     margin-top: 30vh;
@@ -222,27 +271,24 @@ section#landing h1{
     font-size: 1.5em;
 }
 @keyframes rotation {
-    from {
-      transform: rotate(0deg);
+    0% {
+      transform: rotate(0deg) translate(0, 0);
     }
-    to {
-      transform: rotate(359deg);
+    25%{
+        transform: rotate(90deg) translate(50px, 0);
+    }
+    50%{
+        transform: rotate(180deg) translate(50px, 50px);
+    }
+    75%{
+        transform: rotate(270deg) translate(0, 50px);
+
+    }
+    100% {
+      transform: rotate(359deg) translate(0, 0);
     }
 }
-.more-icon{
-    background: #202040;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    border: 1px solid white;
-    padding-top: 20px;
-    position: absolute;
-    top: 30vh;
-    margin: 25px;
-}
-.more-icon a{
-    color: white;
-}
+
 
 /* brand section */
 section#brand{
@@ -274,6 +320,8 @@ section#brand{
 #brand-icons a{
     color: white;
 }
+
+/* brand more-icon */
 #brand-icons i.arrow{
     display: block;
     width: 80px;
@@ -285,6 +333,17 @@ section#brand{
     background: black;
     z-index: 10;
     position: relative;
+    transition: font-size 0.5s;
+}
+#brand-icons a.arrow{
+    transition: 0.5s;
+}
+#brand-icons a.arrow:hover{
+    text-decoration: none;
+}
+#brand-icons i.arrow:hover{
+    text-decoration: none;
+    font-size: 18px;
 }
 
 /* digital design section */
@@ -304,7 +363,7 @@ section#production{
 
 /* ----------------------------------------get in touch */
 section#get-in-touch{
-    background: url(../assets/svgs/get-in-touch.svg) no-repeat 20px 20px, #202040;
+    background: url(../assets/images/get-in-touch.png) no-repeat 20px 20px, #202040;
     background-size: 120vh auto;
 }
 
@@ -368,7 +427,7 @@ footer ul li a:hover{
 
     /* get in touch */
     section#get-in-touch{
-        background: url(../assets/svgs/get-in-touch.svg) no-repeat center 40px, #202040;
+        background: url(../assets/images/get-in-touch.png) no-repeat center 40px, #202040;
         background-size: 70vh auto;
         width: 100vw;
         padding: 100px 0;
@@ -390,7 +449,7 @@ footer ul li a:hover{
     #production-border{
         background: url(../assets/images/productiom-border.png) no-repeat center center;
         background-size: contain;
-        padding: 100px;
+        padding: 200px;
     }
  }
 
@@ -438,6 +497,10 @@ footer ul li a:hover{
         margin: 0;
         padding: 10px;
         width: auto;
+        transition: background 0.5s;
+    }
+    nav ul li.quote:hover{
+        background: #aa50ad;
     }
     nav a:hover{
         cursor: pointer;
@@ -499,7 +562,7 @@ footer ul li a:hover{
 
     /* get in touch */
     section#get-in-touch{
-        background: url(../assets/svgs/get-in-touch.svg) no-repeat center 40px, #202040;
+        background: url(../assets/images/get-in-touch.png) no-repeat center 40px, #202040;
         background-size: 90vh auto;
     }
 
