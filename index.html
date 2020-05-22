@@ -21,6 +21,10 @@
     <!-- link to custom css -->
     <link rel="stylesheet" href="stylesheet/stylesheet.css">
 
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+
 
     <!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -29,8 +33,9 @@
 </head>
 <body>
     
+    <!-- nav section -->
     <header class="hide-pro-up">
-        <nav>
+        <nav class="animated fadeInDown">
             <div class="menu">
                 <ul>
                     <li><a href="index.html" class="active">home</a></li>
@@ -52,7 +57,7 @@
     </header>
 
     <header class="hide-until-pro">
-        <nav>
+        <nav class="animated fadeInDown">
             <ul>
                 <li><a href="index.html" class="active">home</a></li>
                 <li><a href="about.html">about</a></li>
@@ -63,21 +68,14 @@
             </ul>
         </nav>
     </header>
+    <!-- nav section end -->
 
+    <!-- landing section with animation -->
     <section id="landing">
-        <div class="landing-bg text-center">
-            <img id="hex1" src="assets/images/hex-1.png">
-            <img id="hex2" src="assets/images/hex-2.png">
-            <img id="hex3" src="assets/images/hex-3.png">
-        </div>
+
+        <!-- more button -->
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <div class="logo">
-                        <img class="logo" src="assets/images/logo.png" alt="logo">
-                        <h1 class="text-white">Laura Ann Seal</h1>
-                    </div>
-                </div>
                 <div class="col-xl-2 offset-xl-10 text-white text-center hide-until-desktop">
                     <div class="more-icon to-brand">
                         <a href="#brand">
@@ -88,11 +86,41 @@
                     </div>
                 </div>
             </div>
+        </div><!--more button end-->
+
+        <!-- hexes -->
+        <div class="landing-bg text-center animated fadeIn delay-1s">
+            <img id="hex1" src="assets/images/hex-1.png">
+            <img id="hex2" src="assets/images/hex-2.png">
+            <img id="hex3" src="assets/images/hex-3.png">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center animated fadeIn">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 123 138.67"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M117.57,30.69,66.93,1.46a10.81,10.81,0,0,0-10.86,0L5.43,30.69A10.87,10.87,0,0,0,0,40.1V98.57A10.87,10.87,0,0,0,5.43,108l50.64,29.23a10.86,10.86,0,0,0,10.86,0L117.57,108A10.87,10.87,0,0,0,123,98.57V40.1A10.87,10.87,0,0,0,117.57,30.69ZM54.27,108.9,25.9,80.54,54.29,52.16l9.88,10.26L46,80.54,64.19,98.73ZM68.76,87.33l-10-10.13L76.91,59,58.77,40.85l10-10.22L97.1,59Z"/></g></g></svg>
+                        <h1 class="text-white">Laura Ann Seal</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="brand" class="py-5">
+
         <div class="container py-5">
+            <!-- more button -->
+                <div class="row">
+                    <div class="col-xl-2 offset-xl-10 text-white text-center hide-until-desktop">
+                        <div class="more-icon brand">
+                            <a href="#design">
+                                <br>
+                                <i class="arrow fas fa-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <!--more button end-->
 
             <div class="row hide-from-desktop">
                 <div class="col-xs-12 col-md-6 offset-md-3 text-center my-5">
@@ -136,7 +164,6 @@
                     <i class="brand fas fa-laptop-code"></i>
                     <i class="brand fas fa-mobile-alt"></i>
                     <i class="brand fas fa-ad"></i>
-                    <a href="#design" class="arrow"><i class="arrow fas fa-arrow-down"></i></a>
                 </div><!--col-->
 
             </div><!--row-->
@@ -145,36 +172,54 @@
     </section>
 
     <section id="design" class="d-flex align-items-center">
-            <div class="container">
-                <div class="row" id="design-border">
-                    <div class="col-12 text-center text-white">
-                        <h2>Digital Design</h2>
-                        <ul class="unstyled-list spaced-list">
-                            <li>Branding design and creation</li>
-                            <li>User experience design</li>
-                            <li>User interface design</li>
-                            <li>Website design & layout</li>
-                            <li>Multiple platforms</li>
-                        </ul>
-                    </div>
-                    <div class="col-12 text-center">
-                        <a href="services.html" class="btn btn-secondary">more services</a>
-                    </div>
-                </div>
+
+        <div class="container">
+             <!-- more button -->
                 <div class="row">
                     <div class="col-xl-2 offset-xl-10 text-white text-center hide-until-desktop">
-                        <div class="more-icon to-production">
+                        <div class="more-icon design">
                             <a href="#production">
+                                <br>
                                 <i class="arrow fas fa-arrow-down"></i>
                             </a>
                         </div>
                     </div>
                 </div>
+            <!--more button end-->
+
+            <div class="row" id="design-border">
+                <div class="col-12 text-center text-white">
+                    <h2>Digital Design</h2>
+                    <ul class="unstyled-list spaced-list">
+                        <li>Branding design and creation</li>
+                        <li>User experience design</li>
+                        <li>User interface design</li>
+                        <li>Website design & layout</li>
+                        <li>Multiple platforms</li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="services.html" class="btn btn-secondary">more services</a>
+                </div>
             </div>
+        </div>
+
     </section>
 
     <section id="production" class="d-flex align-items-center">
         <div class="container">
+            <!-- more button -->
+            <div class="row">
+                <div class="col-xl-2 offset-xl-10 text-white text-center hide-until-desktop">
+                    <div class="more-icon production">
+                        <a href="#get-in-touch">
+                            <br>
+                            <i class="arrow fas fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--more button end-->
             <div class="row" id="production-border">
                 <div class="col-12 text-center text-white">
                     <h2>Digital Production <br>& Strategy</h2>
@@ -188,15 +233,6 @@
                 </div>
                 <div class="col-12 text-center">
                     <a href="services.html" class="btn btn-warning">more services</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-2 offset-xl-10 text-white text-center hide-until-desktop">
-                    <div class="more-icon to-get-in-touch">
-                        <a href="#get-in-touch">
-                            <i class="arrow fas fa-arrow-down"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -271,7 +307,6 @@
         ]
     </script>
     <script src="scripts/developYour.js"></script>
-    <script src="scripts/animate.js"></script>
     
 </body>
 </html>

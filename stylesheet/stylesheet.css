@@ -134,6 +134,11 @@ ul.spaced-list li{
     padding: 20px 40px;
     color: white;
 }
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active{
+    background: #783f99;
+    color: white;
+    border: 1px solid #783f99;
+}
 
 
 /* more icons */
@@ -144,6 +149,8 @@ ul.spaced-list li{
     position: absolute;
     margin: 25px;
     transition: 0.5s;
+    z-index: 50;
+   
 }
 .more-icon:hover { 
     cursor: pointer;
@@ -153,25 +160,26 @@ ul.spaced-list li{
     color: white;
 }
 .to-brand{
-    top: 30vh;
     border-radius: 40px;
     border: 1px solid white;
     background: #202040;
+    top: 80vh;
 }
 .to-brand:hover{
     background: #3c3c68;
 }
-.to-production{
-    opacity: 0.6;
+.more-icon.brand{
+    top: 70vh;
 }
-.to-get-in-touch{
-    bottom: 3vh;
-    opacity: 0.6;
+.more-icon.design{
+    top: 60vh;
+}
+.more-icon.production{
+    top: 72vh;
 }
 
 
 /* ----------------------------------------nav */
-header{}
 .menu-mobile{
     position: fixed;
     background: rgba(0,0,0,0.8);
@@ -360,7 +368,6 @@ section#production{
     background-size: cover;
     min-height: 100vh;
 }
-
 /* ----------------------------------------get in touch */
 section#get-in-touch{
     background: url(../assets/images/get-in-touch.png) no-repeat 20px 20px, #202040;
@@ -541,10 +548,25 @@ footer ul li a:hover{
     .logo{
         margin-top: 30vh;
     }
-    img.logo{
-        width: 8vw;
+    svg.logo{
+        width: 5vw;
         margin: 40px;
     }
+    .cls-1{
+        stroke: white;
+        stroke-width: 2;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        fill: rgba(255,255,255,0);
+        animation: draw 10s linear forwards;
+        
+    }
+    @keyframes draw {
+        to {
+          stroke-dashoffset: 0;
+            fill:rgba(255,255,255,1); 
+        }
+      }
  }
 /* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
