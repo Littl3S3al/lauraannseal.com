@@ -140,6 +140,10 @@ ul.spaced-list li{
     border: 1px solid #783f99;
 }
 
+section{
+    width: 100vw;
+}
+
 
 /* more icons */
 .more-icon{
@@ -383,6 +387,85 @@ section#production{
     background-size: cover;
     min-height: 100vh;
 }
+
+
+/* ----------------------------------------about page*/
+section#about-me{
+    background: #202040;
+    padding: 10vh 0;
+}
+.profile-image{
+    width: 100%;
+}
+.dots{
+    margin: 20px 0;
+}
+
+section#ethos{
+    background: black;
+    padding: 10vh 0;
+}
+.ethos-img{
+    margin: 20px 0 40px 0;
+}
+
+/* ----------------------------------------services page*/
+section#services-design{
+    background: #202040;
+    padding: 10vh 0;
+}
+section#services-dev{
+    background: black;
+    padding: 10vh 0;
+}
+.service-box{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+.service-icon{
+    font-size: 2em;
+    padding: 50px 0;
+}
+.service-box-inner{
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------------------------work page*/
+section#work{
+    background: url('../assets/images/work-bg.png') no-repeat center top, #202040;
+    background-size: cover;
+    padding: 10vh 0;
+}
+.tag{
+    color: white;
+    background: #808080;
+    padding: 10px;
+    border-radius: 30px;
+    transition: background 0.5s;
+    height: auto;
+    margin: 10px 0;
+}
+.tag:hover{
+    cursor: pointer;
+    background: #686768;
+}
+a.project-image img{
+    transition: 0.5s;
+}
+a.project-image h2{
+    position: absolute;
+    top: 50%;
+}
+a.project-image img:hover{
+    border-radius: 50%;
+    width: 100%;
+    height: 1;
+    content:url('../assets/images/eg-work-focus.png');
+}
+
 /* ----------------------------------------get in touch */
 section#get-in-touch{
     background: url(../assets/images/get-in-touch.png) no-repeat 20px 20px, #202040;
