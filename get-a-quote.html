@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/the-two-homers-favicon.svg">
+    <title>Laura Ann Seal: home</title>
+ 
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- link to fonts: Courier Prime -->
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+
+    <!-- link to custom css -->
+    <link rel="stylesheet" href="stylesheet/stylesheet.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+
+
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    
+    <!-- nav section -->
+    <header class="hide-pro-up">
+        <nav class="animated fadeInDown">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="work.html">work</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <div class="quote">
+                    <a href="get-a-quote.html">get a quote</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="menu-mobile">
+            menu
+            <i class="fas fa-bars"></i>
+        </div>  
+    </header>
+
+    <header class="hide-until-pro">
+        <nav class="animated fadeInDown">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html" >about</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="work.html">work</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li class="quote"><a href="get-a-quote.html" class="active">get a quote</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- nav section end -->
+
+    <section id="quote">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-12 text-white text-center">
+                    <h1>Get a quote</h1>
+                    <p>Fill out this briefing form and I will get back to you with a detailed quote to fill your needs.</p>
+                </div>
+                <div class="col-12">
+                    <form role="form" class="text-center">
+                        <div class="form-row">
+                             <div class="col-md-6 form-group">
+                                 <label for="name" class="sr-only">Your Name</label> 
+                                 <input type="text" class="form-control" id="name" placeholder="your name">
+                             </div>
+ 
+                             <div class="col-md-6 form-group">
+                                 <label for="email" class="sr-only">Your Email</label> 
+                                 <input type="email" class="form-control" id="email" placeholder="your email">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <label for="message" class="sr-only">Your Message</label> 
+                             <textarea rows="10" id="message" placeholder="your message"></textarea>
+                         </div>
+                         <input type="submit" class="btn btn-lg btn-danger" value="send!">
+                     </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <ul>
+                        <li><a href=""><i class="fas fa-phone"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="grey">&copy; 2020 by Laura Ann Seal</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- bootstrap core javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- custom scripts -->
+    <script src="scripts/navbar.js"></script>
+    <script>
+        const textFields = [
+            'image', 'brand', 'business', 'life', 'identity', 'website', 'footprint', 'look'
+        ]
+    </script>
+    <script src="scripts/developYour.js"></script>
+    
+</body>
+</html>

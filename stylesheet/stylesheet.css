@@ -234,6 +234,44 @@ nav a:focus{
     text-decoration: none;
 }
 
+/* ----------------------------------------get in touch */
+section#get-in-touch{
+    background: url(../assets/images/get-in-touch.png) no-repeat 20px 20px, #202040;
+    background-size: 120vh auto;
+}
+
+
+
+/* ----------------------------------------footer */
+footer{
+    width: 100vw;
+    background: black;
+    padding-top: 30px;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer ul li{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: #602080;
+    border-radius: 25px;
+    padding-top: 8px;
+    transition: background 0.5s;
+}
+footer ul li:hover{
+    background: #b030b0;
+}
+footer ul li a{
+    color: white;
+    font-size: 25px;
+}
+footer ul li a:hover{
+    color: white;
+}
+
 /* ----------------------------------------home page*/
 
 /* landing section */
@@ -466,46 +504,57 @@ a.project-image img:hover{
     content:url('../assets/images/eg-work-focus.png');
 }
 
-/* ----------------------------------------get in touch */
-section#get-in-touch{
-    background: url(../assets/images/get-in-touch.png) no-repeat 20px 20px, #202040;
-    background-size: 120vh auto;
+/* ----------------------------------------project page*/
+section#project-title{
+    background: url('../assets/images/work-bg.png') no-repeat center top, #202040;
+    background-size: cover;
+    padding: 10vh 0;
 }
-
-
-
-/* ----------------------------------------footer */
-footer{
+section#project-details{
+    padding: 10vh 0;
+}
+section#view-more{
+    background: #202040;
+    padding: 0 0 10vh 0 ;
+}
+.project-scroller{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: minmax(150px, 1fr);
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     width: 100vw;
+}
+.project-scroller:after {
+    content: '';
+    width: 10px;
+}
+.project-scroller::-webkit-scrollbar {
+    display: none;
+}
+.project-scroller:last-child {
+    margin-right: 20px;
+}
+.project-scroller div.project{
+    width: 70vw;
+}
+
+
+/* ----------------------------------------get a quote page*/
+
+section#quote{
     background: black;
-    padding-top: 30px;
+    padding: 20vh 0;
 }
-footer ul{
-    list-style: none;
-    padding: 0;
-}
-footer ul li{
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: #602080;
-    border-radius: 25px;
-    padding-top: 8px;
-    transition: background 0.5s;
-}
-footer ul li:hover{
-    background: #b030b0;
-}
-footer ul li a{
-    color: white;
-    font-size: 25px;
-}
-footer ul li a:hover{
-    color: white;
+section#quote .container{
+    background: #202060;
 }
 
 
-/* ----------------------------------------home page*/
+
+
 
 
 
@@ -555,6 +604,15 @@ footer ul li a:hover{
         background: url(../assets/images/productiom-border.png) no-repeat center center;
         background-size: contain;
         padding: 200px;
+    }
+    /* get a quote page */
+    section#quote .container{
+        padding: 10vh 10vw;
+    }
+
+    /* project page */
+    .project-scroller div.project{
+        width: 30vw;
     }
  }
 
@@ -607,6 +665,9 @@ footer ul li a:hover{
     nav ul li.quote:hover{
         background: #aa50ad;
     }
+    nav ul li.quote a.active{
+        color: white;
+    }
     nav a:hover{
         cursor: pointer;
         text-decoration: underline;
@@ -623,6 +684,10 @@ footer ul li a:hover{
     }
     footer ul li a{
         font-size: 30px;
+    }
+
+    .service-box{
+        margin: auto 100px;
     }
     
  }
@@ -645,6 +710,25 @@ footer ul li a:hover{
     }
     .logo{
         margin-top: 30vh;
+    }
+
+    /* project page */
+    .project-scroller{
+        grid-gap: 10px;
+        grid-template-rows: auto;
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+        grid-auto-flow: row;
+        margin: auto;
+        width: 90vw;
+    }
+    .project-scroller div.project{
+        width: auto;
+    }
+    .project-scroller div.project a img{
+        transition: border-radius 0.5s;
+    }
+    .project-scroller div.project a img:hover{
+        border-radius: 50%;
     }
     
  }
