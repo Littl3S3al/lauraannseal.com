@@ -686,9 +686,6 @@ section#quote .container{
         font-size: 30px;
     }
 
-    .service-box{
-        margin: auto 100px;
-    }
     
  }
 
@@ -795,5 +792,16 @@ section#quote .container{
     /* production section */
     #production-border{
         margin-top: 5vh;
+    }
+
+    /* project page */
+    /* project page */
+    .project-scroller{
+        display: block
+    }
+    .project-scroller div.project{
+        display: inline-block;
+        width: 15vw;
+        margin: 5px 0;
     }
  }
